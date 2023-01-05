@@ -26,7 +26,7 @@
           </a>
 
           <ul class="site-nav">
-            <li><a href="" class="link current"> Студія</a></li>
+            <li><a href="" class="link current active"> Студія</a></li>
             <li><a href="./potfolio.html" class="link">Портфоліо</a></li>
             <li><a href="" class="link">Контакти</a></li>
           </ul>
@@ -57,7 +57,9 @@
       <section class="hero overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button" type="button">Замовити послугу</button>
+          <button data-modal-open class="hero-button" type="button">
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -122,29 +124,38 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <div class="feature-list-section">
             <ul>
-              <li>
+              <li class="feature-list-item">
                 <img
                   src="./images/box1.jpg"
                   alt="Процес написання коду"
                   width="370"
                   height="294"
                 />
+                <div class="feature-list-bgd">
+                  <p>Десктопні додатки</p>
+                </div>
               </li>
-              <li>
+              <li class="feature-list-item">
                 <img
                   src="./images/box2.jpg"
                   alt="Дизайнер розробляє макет сторінки"
                   width="370"
                   height="294"
                 />
+                <div class="feature-list-bgd">
+                  <p>Мобільні додатки</p>
+                </div>
               </li>
-              <li>
+              <li class="feature-list-item">
                 <img
                   src="./images/box3.jpg"
                   alt="Дизайнер обирає палітру кольорів"
                   width="370"
                   height="294"
                 />
+                <div class="feature-list-bgd">
+                  <p>Дизайнерські рішення</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -567,5 +578,20 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="ellipse-button">
+          <button type="button" class="close-button" data-modal-close>
+            <img
+              src="images/icons/close.svg"
+              alt="кнопка"
+              width="18"
+              height="18"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
