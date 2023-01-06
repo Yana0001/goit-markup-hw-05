@@ -370,25 +370,30 @@ img {
   height: 44px;
 }
 
-.socials-link:hover .team-socials-item,
-.socials-link:focus {
-  fill: #fff;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-socials-link:hover,
-.team-socials-link:focus {
-  background-color: #2196f3;
-  border-radius: 50%;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .team-socials-item {
   fill: #afb1b8;
   align-items: center;
   justify-content: center;
+}
+
+.team-socials-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.socials-link:hover .team-socials-item,
+.socials-link:focus .team-socials-item {
+  fill: #fff;
+}
+.socials-link:hover .team-socials-box,
+.socials-link:focus .team-socials-box {
+  background-color: #2196f3;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Clients */
