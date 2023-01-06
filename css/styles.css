@@ -538,8 +538,7 @@ footer a:focus {
   border-radius: 50%;
 }
 
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-link:hover {
   background-color: #2196f3;
   border-radius: 50%;
   transition-duration: 250ms;

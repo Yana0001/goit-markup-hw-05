@@ -227,6 +227,13 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.content-features-link:hover .content-overlay {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .content-features h2 {
   font-size: 18px;
   line-height: 2;
@@ -248,6 +255,7 @@ header {
 
 .content-first-overlay {
   position: relative;
+  overflow: hidden;
 }
 
 .content-overlay {
@@ -260,13 +268,13 @@ header {
   opacity: 0;
 }
 
-.content-features-list:hover .content-overlay,
+/* .content-features-list:hover .content-overlay,
 .content-features-list:focus .content-overlay {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 .text-overlay {
   display: block;
@@ -386,8 +394,7 @@ footer a:focus {
   border-radius: 50%;
 }
 
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-link:hover {
   background-color: #2196f3;
   border-radius: 50%;
   transition-duration: 250ms;
