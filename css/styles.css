@@ -108,6 +108,8 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent);
+
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -128,6 +130,7 @@ img {
   background-color: var(--accent);
   border-radius: 2px;
   /* transform: scaleX(1); */
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -167,6 +170,8 @@ img {
 .auth-nav a:hover,
 .auth-nav a:focus {
   color: var(--accent);
+
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -178,6 +183,8 @@ img {
 .socials-item:hover,
 .socials-item:focus {
   fill: var(--accent);
+
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -388,10 +395,16 @@ img {
 .socials-link:hover .team-socials-item,
 .socials-link:focus .team-socials-item {
   fill: #fff;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover .team-socials-box,
 .socials-link:focus .team-socials-box {
   background-color: #2196f3;
+
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -424,6 +437,8 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent);
+
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -431,6 +446,8 @@ img {
 .clients-link:hover .clients-item,
 .clients-link:focus .clients-item {
   fill: var(--accent);
+
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -493,6 +510,8 @@ footer {
 footer a:hover,
 footer a:focus {
   color: var(--accent);
+
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -538,9 +557,12 @@ footer a:focus {
   border-radius: 50%;
 }
 
-.footer-link:hover {
+.footer-link:hover,
+.footer-link:focus {
   background-color: #2196f3;
   border-radius: 50%;
+
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
